@@ -5,5 +5,10 @@ export default defineConfig({
   plugins: [react()],
   server: {
     host: true
-  }
+  },
+  rollupInputOptions: {
+    input: ['src/main.jsx'],
+    preserveEntrySignatures: 'strict',
+    preserveModules: true,
+  },
 })
